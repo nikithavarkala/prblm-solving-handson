@@ -1,0 +1,22 @@
+body{
+    background-color: cornsilk;
+}
+h2{
+    text-decoration: underline;
+    color: crimson;
+    text-shadow: 2px 2px 2px rgb(211, 166, 166);
+}
+pre{
+    color:rgb(224, 110, 22);
+    font-weight: bold;
+}
+h3{
+    text-decoration:underline;
+    color:rgb(104, 26, 102);
+    text-shadow: 2px 2px 2px pink;
+}
+p{
+    color:cadetblue;
+    font-family: cursive;
+    font-weight: bold;
+}

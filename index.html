@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>Js-Handson</h2>
+    <p>&cir; Problem Solving</p>
+    <h3>Find the Smaller Angle</h3>
+    <pre>
+        var Minimal_Angle = (h, m) => 
+        {
+          let hr= (h*360)/12+(m*360)/(12*60);
+          let min=(m*360)/60;
+          let angle=Math.abs(hr-min)
+          if(angle>180){
+            return 360-angle;
+          }
+          else{
+            return angle;
+          }
+        };
+    </pre>
+    <h3>Check whether the year is Leap year or not.</h3>
+    <pre>
+        var Check_Leap = (year) => 
+        {
+          if ((year % 4===0) && (year % 100!==0) || (year % 400===0)) {
+            return "Leap Year";
+          }
+          else{
+            return "Non Leap Year";
+          }
+        
+        };  
+    </pre>
+    <h3>Perfect Number Check.</h3>
+    <pre>
+        var Perfect_Check = (N) => 
+        {
+          if(N===1){
+            return "YES";
+          }
+          let m=N;
+          let sum=0;
+          for(let i=0;i< N;i++){
+            if(N%i===0){
+              sum+=i;
+            }
+          }  
+          if(sum===m){
+            return "YES";
+          }      
+          else{
+            return "NO";
+          }
+        };  
+    </pre>
+    <h3>Reverse a Number.</h3>
+    <pre>
+        var Reverse_Number = (N) => 
+        {
+          let res=0;
+          while(N>0){
+            r=N%10;
+            res=res*10+r;
+            N=Math.floor(N/10);
+          }
+          return res;
+        };  
+    </pre>
+    <h3>Substring Check.</h3>
+    <pre>
+        var Substring_Check = (S1, S2) => 
+        {
+          let c=0;
+          let a=S1.split(" ");
+          for(let i=0;i< a.length;i++){
+            if(a[i]===S2){
+              c++;
+            }
+          }
+          if(c>0)
+          return "YES";
+          else
+          return "NO";
+        };  
+    </pre>
+</body>
+</html>
